@@ -1,0 +1,12 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Nothing here is a secret, but be explicit if that changes
+*.env
+.env.*

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ديمو ديسك</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="brand-name">ديمو ديسك</h1>
+    <input type="text" class="search-bar" data-ph="search" placeholder="ابحث عن منتج...">
+    <div class="spacer"></div>
+    <button class="btn btn-grey lang-btn">EN</button>
+    <a class="btn btn-grey auth-link" href="login.html" data-t="login">تسجيل الدخول</a>
+    <a class="btn cart-btn" href="cart.html">
+      <span data-t="cart">السلة</span>
+      <span class="badge">0</span>
+    </a>
+  </header>
+
+  <div class="navbar" data-t="tagline">متجر القرطاسية</div>
+
+  <div class="content">
+    <div class="filters"></div>
+    <p class="result-count"></p>
+    <div class="grid"></div>
+    <div class="empty-msg empty" style="display:none">
+      <p>لا توجد نتائج</p>
+    </div>
+  </div>
+
+  <footer class="footer" data-t="footer">مشروع تخرج جامعي</footer>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>

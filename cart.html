@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ديمو ديسك</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="brand-name">ديمو ديسك</h1>
+    <div class="spacer"></div>
+    <button class="btn btn-grey lang-btn">EN</button>
+    <a class="btn btn-grey auth-link" href="login.html" data-t="login">تسجيل الدخول</a>
+    <a class="btn cart-btn" href="cart.html">
+      <span data-t="cart">السلة</span>
+      <span class="badge">0</span>
+    </a>
+  </header>
+
+  <div class="navbar" data-t="cart">السلة</div>
+
+  <div class="content">
+    <div class="empty-msg empty" style="display:none">
+      <p data-t="emptyCart">سلتك فارغة</p>
+      <p data-t="emptyCartHint">اضف بعض المنتجات للمتابعة</p>
+      <p><a class="btn" href="index.html" data-t="continue">متابعة التسوق</a></p>
+    </div>
+
+    <div class="cart-wrap">
+      <p><button class="btn btn-red clear-btn" style="display:none" data-t="clear">إفراغ</button></p>
+
+      <div class="cart-items"></div>
+
+      <div class="summary">
+        <div class="row"><span data-t="subtotal">المجموع الفرعي</span><span class="sum-sub">0</span></div>
+        <div class="row"><span data-t="tax">الضريبة</span><span class="sum-tax">0</span></div>
+        <div class="row total"><span data-t="total">الإجمالي</span><span class="sum-total">0</span></div>
+        <p><a class="btn" href="checkout.html" data-t="checkout">إتمام الطلب</a></p>
+        <p style="font-size:13px;color:#666" data-t="demo">متجر تجريبي - بدون دفع حقيقي</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" data-t="footer">مشروع تخرج جامعي</footer>
+
+  <script src="js/cart-page.js" type="module"></script>
+</body>
+</html>

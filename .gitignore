@@ -6,3 +6,7 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Nothing here is a secret, but be explicit if that changes
+*.env
+.env.*

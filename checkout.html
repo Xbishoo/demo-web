@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ديمو ديسك</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="brand-name">ديمو ديسك</h1>
+    <div class="spacer"></div>
+    <button class="btn btn-grey lang-btn">EN</button>
+    <a class="btn btn-grey auth-link" href="login.html" data-t="login">تسجيل الدخول</a>
+    <a class="btn cart-btn" href="cart.html">
+      <span data-t="cart">السلة</span>
+      <span class="badge">0</span>
+    </a>
+  </header>
+
+  <div class="navbar" data-t="checkout">إتمام الطلب</div>
+
+  <div class="content">
+    <div class="need-login empty" style="display:none">
+      <p data-t="needLogin">سجل الدخول للمتابعة</p>
+      <p><a class="btn" href="login.html" data-t="login">تسجيل الدخول</a></p>
+    </div>
+
+    <div class="empty-msg empty" style="display:none">
+      <p data-t="emptyCart">سلتك فارغة</p>
+      <p><a class="btn" href="index.html" data-t="continue">متابعة التسوق</a></p>
+    </div>
+
+    <div class="cart-wrap">
+      <h3 data-t="orderSummary">ملخص الطلب</h3>
+      <div class="cart-items"></div>
+
+      <div class="summary">
+        <div class="row"><span data-t="subtotal">المجموع الفرعي</span><span class="sum-sub">0</span></div>
+        <div class="row"><span data-t="tax">الضريبة</span><span class="sum-tax">0</span></div>
+        <div class="row total"><span data-t="total">الإجمالي</span><span class="sum-total">0</span></div>
+        <p><button class="btn place-btn" style="width:100%" data-t="placeOrder">تأكيد الطلب</button></p>
+        <p style="font-size:13px;color:#666" data-t="demo">متجر تجريبي - بدون دفع حقيقي</p>
+      </div>
+    </div>
+
+    <div class="receipt" style="display:none;text-align:center;padding:40px">
+      <h2 data-t="orderDone">تم استلام طلبك</h2>
+      <p data-t="thanks">شكرا لتسوقك معنا</p>
+      <p><span data-t="ref">رقم الطلب</span>: <strong class="ref-num"></strong></p>
+      <p><a class="btn" href="index.html" data-t="continue">متابعة التسوق</a></p>
+    </div>
+  </div>
+
+  <footer class="footer" data-t="footer">مشروع تخرج جامعي</footer>
+
+  <script src="js/checkout.js" type="module"></script>
+</body>
+</html>

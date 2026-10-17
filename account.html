@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ديمو ديسك</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="brand-name">ديمو ديسك</h1>
+    <div class="spacer"></div>
+    <button class="btn btn-grey lang-btn">EN</button>
+    <a class="btn btn-grey auth-link" href="account.html" data-t="account">حسابي</a>
+    <a class="btn cart-btn" href="cart.html">
+      <span data-t="cart">السلة</span>
+      <span class="badge">0</span>
+    </a>
+  </header>
+
+  <div class="navbar" data-t="account">حسابي</div>
+
+  <div class="content">
+    <div class="signed-out empty">
+      <p data-t="needLogin">سجل الدخول للمتابعة</p>
+      <p><a class="btn" href="login.html" data-t="login">تسجيل الدخول</a></p>
+    </div>
+
+    <div class="account-box form-box" style="display:none">
+      <h2 class="hello" style="text-align:center;margin-top:0"></h2>
+      <p class="since" style="text-align:center;color:#666"></p>
+      <a class="btn" href="index.html" style="display:block;text-align:center" data-t="continue">متابعة التسوق</a>
+      <button class="btn btn-grey signout-btn" style="width:100%;margin-top:8px" data-t="logout">تسجيل الخروج</button>
+    </div>
+  </div>
+
+  <footer class="footer" data-t="footer">مشروع تخرج جامعي</footer>
+
+  <script src="js/account.js" type="module"></script>
+</body>
+</html>

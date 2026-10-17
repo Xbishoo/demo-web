@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ديمو ديسك</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="brand-name">ديمو ديسك</h1>
+    <div class="spacer"></div>
+    <button class="btn btn-grey lang-btn">EN</button>
+    <a class="btn btn-grey auth-link" href="login.html" data-t="login">تسجيل الدخول</a>
+    <a class="btn cart-btn" href="cart.html">
+      <span data-t="cart">السلة</span>
+      <span class="badge">0</span>
+    </a>
+  </header>
+
+  <div class="navbar" data-t="loginTitle">تسجيل الدخول</div>
+
+  <div class="content">
+    <form class="form-box login-form">
+      <p style="text-align:center;color:#666;margin-top:0" data-t="loginHint">الدخول مطلوب لإتمام الطلب</p>
+
+      <label data-t="username">اسم المستخدم</label>
+      <input type="text" name="username">
+      <p class="error err-username"></p>
+
+      <label data-t="password">كلمة المرور</label>
+      <input type="password" name="password">
+      <p class="error err-password"></p>
+
+      <button type="submit" class="btn" style="width:100%" data-t="loginBtn">دخول</button>
+    </form>
+  </div>
+
+  <footer class="footer" data-t="demo">متجر تجريبي - بدون دفع حقيقي</footer>
+
+  <script src="js/login.js" type="module"></script>
+</body>
+</html>
